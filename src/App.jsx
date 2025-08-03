@@ -1,14 +1,23 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Footer from './Components/Footer/Footer'
-const App = () => {
-  return (
-    <>
-      <Navbar />
+import SearchBar from './Components/SearchBar/SearchBar'
+import { Routes , Route} from 'react-router-dom'
 
-      <div>
-        hii this is a pagekdfhksajfhkawjefefasdfa
-      </div>
+const App = () => {
+
+ 
+ 
+  return (
+    
+    <>
+
+      <Navbar />
+     
+     <Routes>
+      <Route path='/div' element={<div>I am a Div</div>}/>
+      <Route path='/span' element={<span>I am a Span</span>}/>
+     </Routes>
 
       <Footer/>
     </>
