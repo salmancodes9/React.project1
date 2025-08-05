@@ -43,7 +43,7 @@ const Navbar = () => {
           <h4><MdOutlineContactless /></h4>
         </div>
       </nav>
-    </>
+    </> 
   );
 };
 
