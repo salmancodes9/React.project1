@@ -1,8 +1,12 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
+import Button from './Components/SearchBar/SearchBar'
 import Footer from './Components/Footer/Footer'
 import SearchBar from './Components/SearchBar/SearchBar'
 import { Routes , Route} from 'react-router-dom'
+import Dashboard from './Pages/Dashboard/Dashboard'
+import Product from './Pages/Product/Product'
+
 
 const App = () => {
 
@@ -13,10 +17,10 @@ const App = () => {
     <>
 
       <Navbar />
-     
+   
      <Routes>
-      <Route path='/div' element={<div>I am a Div</div>}/>
-      <Route path='/span' element={<span>I am a Span</span>}/>
+      <Route path='/' element={<Dashboard/>}/>
+      <Route path='/product/:id' element={<Product/>}/>
      </Routes>
 
       <Footer/>

@@ -6,6 +6,7 @@ import { FaFireAlt } from "react-icons/fa";
 import { IoStorefront } from "react-icons/io5";
 import { MdOutlineContactless } from "react-icons/md";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
 
@@ -26,21 +27,21 @@ const Navbar = () => {
             Toggle
           </button>
 
-          <Link to="/div">
+          {/* <Link to="/product/1">
           Div
           </Link>
 
           <Link to="/span">
           Span
-          </Link>
-          <h4>
-            <FaShoppingCart className="cart" />
-          </h4>
-          <h4>
-            <FaFireAlt />
-          </h4>
-          <h4><IoStorefront /></h4>
-          <h4><MdOutlineContactless /></h4>
+          </Link> */}
+
+          <h4><FaShoppingCart className="Cart" /></h4>
+
+          <h4><FaFireAlt className="Deals" /></h4>
+
+          <h4><IoStorefront className="Store" /></h4>
+
+          <h4><MdOutlineContactless className="Contact"/></h4>
         </div>
       </nav>
     </>

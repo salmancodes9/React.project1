@@ -1,7 +1,28 @@
-.searchBar{
+/* .searchBar{
+    font-size: 10px;
+    
     background-color: black;
-    border-radius: 20px;
+    border-radius: 300px;
     padding-left: 5px;
     border: none;
+
     
+}*/
+.searchBar::placeholder{
+    color: rgb(199, 189, 189);
+    text-align: center;
+} 
+
+
+.searchBar{
+     display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 300px;
+
+  padding-top: 5px;
+  /* background-color: white; */
+  overflow: hidden;
+  width: fit-content;
 }
+
